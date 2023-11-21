@@ -13,15 +13,27 @@ namespace SignalR_Client
             bool isExit = false;
             while (!isExit)
             {
-                Console.WriteLine("Enter message or exit.");
+                Console.WriteLine("Enter message or exit or setname.");
                 var input = Console.ReadLine();
 
                 if (string.IsNullOrWhiteSpace(input)) {
                     continue;
                 }
 
-                if (input == "exit") {
+                if (input == "exit")
+                {
                     isExit = true;
+                }
+                else if (input == "setname") 
+                {
+                    Console.WriteLine("Enter user name:");
+                    var userName = Console.ReadLine();
+                    if(string.IsNullOrWhiteSpace(userName))
+                    {
+                        continue;
+                    }
+
+                    await hubConnection.SendAsync("SetName", userName);
                 }
                 else
                 {
