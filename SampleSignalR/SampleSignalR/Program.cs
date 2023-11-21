@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.SignalR;
 using SignalR_Server.Hubs;
 
 namespace SampleSignalR

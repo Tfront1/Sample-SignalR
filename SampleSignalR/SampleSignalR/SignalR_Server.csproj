@@ -15,8 +15,4 @@
     <ProjectReference Include="..\SignalR_Common\SignalR_Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
