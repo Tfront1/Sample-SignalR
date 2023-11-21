@@ -1,4 +1,6 @@
 
+using SignalR_Server.Hubs;
+
 namespace SampleSignalR
 {
     public class Program
@@ -13,6 +15,7 @@ namespace SampleSignalR
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddSignalR();
 
             var app = builder.Build();
 
@@ -27,6 +30,12 @@ namespace SampleSignalR
 
             app.UseAuthorization();
 
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+                endpoints.MapHub<NotificationHub>("/notification");
+            });
 
             app.MapControllers();
 

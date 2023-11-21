@@ -31,3 +31,5 @@ C:\Users\1\Desktop\SignalR\Sample-SignalR\SampleSignalR\SampleSignalR\obj\Debug\
 C:\Users\1\Desktop\SignalR\Sample-SignalR\SampleSignalR\SampleSignalR\obj\Debug\net7.0\SignalR_Server.pdb
 C:\Users\1\Desktop\SignalR\Sample-SignalR\SampleSignalR\SampleSignalR\obj\Debug\net7.0\SignalR_Server.genruntimeconfig.cache
 C:\Users\1\Desktop\SignalR\Sample-SignalR\SampleSignalR\SampleSignalR\obj\Debug\net7.0\ref\SignalR_Server.dll
+C:\Users\1\Desktop\SignalR\Sample-SignalR\SampleSignalR\SampleSignalR\bin\Debug\net7.0\SignalR_Common.dll
+C:\Users\1\Desktop\SignalR\Sample-SignalR\SampleSignalR\SampleSignalR\bin\Debug\net7.0\SignalR_Common.pdb

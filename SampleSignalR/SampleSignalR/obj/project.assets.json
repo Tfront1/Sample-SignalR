@@ -107,6 +107,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "SignalR_Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/SignalR_Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SignalR_Common.dll": {}
+        }
       }
     }
   },
@@ -451,11 +461,17 @@
         "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "SignalR_Common/1.0.0": {
+      "type": "project",
+      "path": "../SignalR_Common/SignalR_Common.csproj",
+      "msbuildProject": "../SignalR_Common/SignalR_Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
+      "SignalR_Common >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -491,7 +507,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\1\\Desktop\\SignalR\\Sample-SignalR\\SampleSignalR\\SignalR_Common\\SignalR_Common.csproj": {
+              "projectPath": "C:\\Users\\1\\Desktop\\SignalR\\Sample-SignalR\\SampleSignalR\\SignalR_Common\\SignalR_Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
